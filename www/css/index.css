@@ -1,0 +1,462 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#000000 !important;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #A7A7A7),
+        color-stop(0.51, #E4E4E4)
+    );
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+    width:100%;
+}
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+body.ui-mobile-viewport
+{
+    height: 100%;
+
+}
+body p,a,div,label,li,button
+{
+    text-shadow: none !important;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.ui-page-theme-a
+{
+    background-color: #000000;
+}
+.head
+{
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80% !important;
+}
+
+.logo
+{
+    width: 90%;
+    margin-top: 23%;
+    margin-left: 5%;
+}
+.phone
+{
+    font-size: 26px;
+    padding: 0px !important;
+    /*padding-bottom: 0px!important;*/
+    min-height: 1.5em !important;
+    text-align: center !important;
+    margin-bottom: 0px !important;
+}
+.tel_box , .pin_box
+{
+ margin-top: 20px;
+
+}
+
+.telphone
+{
+    margin-top: 14%;
+
+}
+.telphone p{
+    text-align: center;
+    font-size: 16px;
+    color: rgb(0, 186, 255);
+    text-shadow: none;
+    margin-bottom: 10px;
+}
+.pin
+{
+    width: 100%;
+    text-align: center;
+}
+.pin .ui-input-text{
+    width: 40px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+.log_btn
+{
+    background-color: #00baff !important;
+    color: #030303 !important;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+/* Profile Page*/
+.backimg{
+    width: 65%;
+    height: auto;
+    float: right;
+    margin-top: calc(50vh - 50%);
+    position: fixed;
+    right: 0px;
+ }
+
+.head1
+{
+    background-image: url("../img/welcome.png");
+    background-size: 100% 100%;
+    height: 55px;
+    width: 100%;
+    position: relative;
+    margin-top: 11px;
+}
+.welcome
+{
+    color: rgb(34, 179, 227);
+    font-size: 16px;
+    margin: 16px 0px 0px 16px;
+    letter-spacing: 5px;
+    position: absolute;
+}
+.customer{
+    margin: 35px 0px 0px 17px;
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    position: absolute;
+}
+.today
+{
+    color: white;
+    font-size: 17px;
+    position: relative;
+    float: right;
+    margin-top: 1px;
+    width: 100%;
+    text-align: right;
+    margin-right: 20px;
+}
+.head2
+{
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+.white
+{
+    background-color: #ffffff;
+    width: 33%;
+    float: left;
+    height: 100%;
+}
+.yellow
+{
+    background-color: #ef9624;
+    width: 67%;
+    float: right;
+    height: 100%;
+    overflow-y: scroll;
+}
+.head2 p{
+    color: #000000;
+    text-align: center;
+}
+.late
+{
+    font-size: 12px;
+    margin: 2px 0px 0px 0px;
+    margin-top: 12px;
+}
+.data
+{
+    font-size: 20px;
+    margin: 0px auto;
+}
+.yellow p
+{
+    margin-top: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+.select
+{
+    position: relative;
+    background-color: rgb(34, 179, 227);
+    width: 100%;
+    padding-left: 20px;
+    margin: 0px auto;
+    color: black;
+    line-height: 19px;
+    font-size: 15px;
+    margin-top: 33px;
+}
+.data1
+{
+    position: absolute;
+    top: 180px;
+    width: 100%;
+    height: 103px;
+}
+.date1
+{
+    color: white;
+    width: 100%;
+    padding-left: 20px;
+    font-size: 15px;
+}
+.game
+{
+    color: rgb(20, 148, 230);
+    padding-left: 17px;
+    font-size: 20px;
+}
+.add{ background-color: gray; line-height: 20px;margin-bottom: 5px;}
+.line
+{
+    border: 1px solid rgb(255, 255, 255);
+    margin: 7px 20px 5px 20px;
+}
+.data2
+{
+    position: absolute;
+    top: 290px;
+    width: 100%;
+    height: 100px;
+}
+.data3
+{
+    position: relative;
+    height: 100px;
+   margin-top: 10px;
+    background-color: #222;;
+    width: 96%;
+    margin-left: 2%;
+    border-radius: 5px;
+}
+.property
+{
+    /*width: 35%;*/
+    width: calc(40vw - 20px);
+    float: left;
+
+}
+.per
+{
+    color: white;
+    margin-top: 5px;
+    text-align: right;
+}
+.ag_text
+{
+
+}
+.photo
+{
+    width: 75px;
+    float: left;
+    padding: 4px;
+    margin-left: 4px;
+    height: 93px;
+}
+.agent
+{
+    /*width: 40%;*/
+    width: calc(50vw - 55px);
+    float: right;
+    margin-right: 5px;
+}
+.bob
+{
+    font-size: 15.5px;
+    color: rgb(20, 148, 230);
+    width: 100%;
+    text-align: right;
+    font-weight: 200;
+}
+.available
+{
+    margin-top: 5px;
+}
+#iv, #av, #invalid,#avail
+{
+    display: none;
+}
+.available p{
+    color: #ffffff;
+    float: right;
+}
+.available img
+{
+    width: 11px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 1px;
+}
+.agent a
+{
+    height: 43px;
+    background-image: url("../img/agent.png");
+    background-size: 100% 100%;
+    color: rgb(20, 148, 230) !important;
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 17px;
+    line-height: 45px;
+    text-decoration: none !important;
+}
+.logout
+{
+    width: 80% !important;
+    margin-left: 10%;
+    background-color: crimson !important;
+    color: #ffffff !important;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.forget
+{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+.check input
+{
+    margin-top: -3px;
+    margin-left: 19%;
+}
+/*.ui-checkbox*/
+/*{*/
+    /*float: left;*/
+    /*width: 40%;*/
+/*}*/
+.check p{
+    margin-top: 23px;
+}
+#game
+{
+    position: relative;
+    margin-top: 12px;
+    min-height: 200px;
+}
+#game p{
+    font-size: 14px !important;
+    padding-left: 8px;
+}
+
+
+/* loading */
+#preloader {
+    position:fixed;
+    z-index:2500;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#000000;
+    z-index:999999999;
+}
+#status {
+    position:fixed;
+    z-index:99999999;
+    width:250px;
+    height:280px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    padding-bottom:40px;
+    background-image:url(../img/wheel.gif);
+    background-size:64px 64px;
+    background-repeat:no-repeat;
+    background-position:center bottom;
+    margin:-125px 0 0 -125px;
+}
+
+.preloader-logo{
+    background-image:url(../img/pro_logo.png);
+    background-size:130px 50px;
+    height:50px;
+    width:130px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:40px;
+}
+.center-text{text-align:center; display:block;color:#00baff; }
+.smaller-text{font-size:13px;color: white;}
+
+ #game p{
+     color: white !important;
+     background-color: transparent !important;
+     font-size: 15px !important;
+     padding-left: 8px;
+ }
+
+#game p:nth-child(3n-2)
+{
+    font-size: 20px !important;
+    color: rgb(255, 180, 51) !important;
+}
+strong
+{
+    color: deepskyblue;
+    font-size: 23px;
+    line-height: 30px;
+}
+.cell
+{
+    border: 1px solid ;
+    margin-top: 12px;
+    width: 97%;
+}
+
